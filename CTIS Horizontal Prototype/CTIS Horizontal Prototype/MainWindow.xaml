@@ -25,9 +25,9 @@
         <Image x:Name="cancel_button" Margin="0,176,10,85" Source="blank-metal-button croppoed.jpg" Stretch="Fill" Width="25" Height="25" RenderTransformOrigin="0.48,4.12" Grid.Row="1" HorizontalAlignment="Right" MouseDown="cancel_button_MouseDown"/>
         <Image x:Name="blank_metal_button_croppoed_jpg_Copy14" Margin="486,124,6,137" Source="blank-metal-button croppoed.jpg" Stretch="Fill" Width="25" Height="25" Grid.Row="1"/>
         <Image x:Name="blank_metal_button_croppoed_jpg_Copy15" Margin="486,77,6,184" Source="blank-metal-button croppoed.jpg" Stretch="Fill" Width="25" Height="25" Grid.Row="1"/>
-        <Image x:Name="blank_metal_button_croppoed_jpg_Copy16" Margin="486,30,6,231" Source="blank-metal-button croppoed.jpg" Stretch="Fill" Width="25" Height="25" RenderTransformOrigin="0.6,4.64" Grid.Row="1"/>
+        <Image x:Name="blank_metal_button_croppoed_jpg_Copy16" Margin="486,30,6,231" Source="blank-metal-button croppoed.jpg" Stretch="Fill" Width="25" Height="25" RenderTransformOrigin="0.6,4.64" Grid.Row="1" MouseDown="blank_metal_button_croppoed_jpg_Copy16_MouseDown"/>
 
-        <Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="296" Margin="37,36,0,0" VerticalAlignment="Top" Width="444" Grid.RowSpan="2" Visibility="Visible">
+        <Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="296" Margin="37,36,0,0" VerticalAlignment="Top" Width="444" Grid.RowSpan="2">
             <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
             <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
             <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
@@ -48,6 +48,8 @@
             <Label x:Name="label_Copy4" Content="Youth Daily Pass" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
             <Label x:Name="label_Copy5" Content="QuickCard Settings" HorizontalAlignment="Left" Margin="323,15,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
             <Label x:Name="label_Copy6" Content="Train Locations" HorizontalAlignment="Left" Margin="323,61,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label_Copy9" Content="Nearby Bus Times" HorizontalAlignment="Left" Margin="323,108,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label_Copy10" Content="Help" HorizontalAlignment="Left" Margin="323,202,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
 
         </Grid>
 
@@ -64,12 +66,12 @@
             <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
             <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="315,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
             <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
-            <Rectangle Fill="#FFF50808" HorizontalAlignment="Left" Height="128" Margin="158,78,0,0" Stroke="Black" VerticalAlignment="Top" Width="125"/>
+            <Rectangle Fill="#FFF50808" HorizontalAlignment="Left" Height="128" Margin="158,78,0,0" Stroke="Black" VerticalAlignment="Top" Width="125" MouseDown="Rectangle_MouseDown"/>
             <Label x:Name="label1" Content="Please insert&#xD;&#xA;coins to&#xD;&#xA;purchase your&#xD;&#xA;ticket!" HorizontalAlignment="Left" Height="98" Margin="168,96,0,0" VerticalAlignment="Top" Width="108" Foreground="White" FontWeight="Bold" FontSize="14.667"/>
             <Label x:Name="label_Copy7" Content="Cancel" HorizontalAlignment="Left" Margin="323,250,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
 
         </Grid>
-        <Grid x:Name="MapGrid" HorizontalAlignment="Left" Height="296" Margin="37,36,0,0" VerticalAlignment="Top" Width="444" Grid.RowSpan="2" Visibility="Collapsed">
+        <Grid x:Name="MapGrid" HorizontalAlignment="Left" Height="296" Margin="37,36,0,0" VerticalAlignment="Top" Width="444" Grid.RowSpan="2" Visibility="Hidden">
             <Image x:Name="Calgary_CTrain_Map_png" Source="Calgary_CTrain_Map.png" Stretch="Fill"/>
             <Label x:Name="cancelmap" Content="Cancel" HorizontalAlignment="Left" Margin="396,254,0,0" VerticalAlignment="Top" Width="48" Foreground="#FFF1EEEE" Background="#FF002AE8"/>
         </Grid>
@@ -128,9 +130,99 @@
             <Label x:Name="setlabel_Copy" Content="Setup Monthly Pass" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="120" Foreground="#FFF1EEEE"/>
             <Label x:Name="setlabel_Copy1" Content="Setup Daily Pass" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
             <Label x:Name="setlabel_Copy8" Content="Cancel" HorizontalAlignment="Left" Margin="323,250,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="setlabel_Copy2" Content="Tap Your Card First!" HorizontalAlignment="Left" Margin="129,61,0,0" VerticalAlignment="Top" Width="189" FontSize="21.333" Visibility="Collapsed"/>
+            <Label x:Name="setlabel_Copy3" Content="You have:&#xD;&#xA;1h:24m Remaining" HorizontalAlignment="Left" Margin="129,61,0,0" VerticalAlignment="Top" Width="189" FontSize="18.667" Visibility="Collapsed"/>
 
         </Grid>
-        <Button x:Name="Swipe_Card_Button" Content="Swipe Card" HorizontalAlignment="Left" Margin="227,250,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" MouseDown="Swipe_Card_Button_MouseDown"/>
+        <Button x:Name="Swipe_Card_Button" Content="Tap Transit Card" HorizontalAlignment="Left" Margin="216,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" MouseDown="Swipe_Card_Button_MouseDown" Height="46"/>
+        <Grid x:Name="ChoosePaymentGrid" HorizontalAlignment="Left" Height="296" VerticalAlignment="Top" Width="442" Margin="38,36,0,0" Grid.RowSpan="2" Visibility="Collapsed">
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,201,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="1,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,108,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="315,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Label x:Name="label2_Copy7" Content="Cancel" HorizontalAlignment="Left" Margin="323,250,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label2_Copy" Content="Cash" HorizontalAlignment="Left" Margin="315,108,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label2_Copy2" Content="Credit" HorizontalAlignment="Left" Margin="1,16,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label2_Copy3" Content="Debit" HorizontalAlignment="Left" Margin="315,16,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label2_Copy4" Content="      Choose Your &#xA;Method Of Payment" HorizontalAlignment="Left" Margin="139,89,0,0" VerticalAlignment="Top" Width="176" FontSize="18.667"/>
+            <Label x:Name="label2_Copy5" Content="       Cost: $3.05" HorizontalAlignment="Left" Margin="139,17,0,0" VerticalAlignment="Top" Width="176" FontSize="18.667"/>
+        </Grid>
+        <Grid x:Name="DebsCredsGrid" HorizontalAlignment="Left" Height="296" VerticalAlignment="Top" Width="442" Margin="38,36,0,0" Grid.RowSpan="2" Visibility="Collapsed">
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,201,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="1,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,108,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="315,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Label x:Name="label3_Copy7" Content="Cancel" HorizontalAlignment="Left" Margin="323,250,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label3_Copy4" Content="        Tap Your &#xD;&#xA;Debit/Credit Card" HorizontalAlignment="Left" Margin="139,89,0,0" VerticalAlignment="Top" Width="176" FontSize="18.667" MouseDown="label3_Copy4_MouseDown"/>
+            <Label x:Name="label3_Copy" Content="Use Chip/Swipe" HorizontalAlignment="Left" Margin="0,19,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+        </Grid>
+        <Grid x:Name="TapOrPrint" HorizontalAlignment="Left" Height="296" VerticalAlignment="Top" Width="442" Margin="38,36,0,0" Grid.RowSpan="2" Visibility="Collapsed">
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,201,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="1,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,108,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="315,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Label x:Name="label4_Copy" Content="Print Ticket" HorizontalAlignment="Left" Margin="1,16,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+        </Grid>
+        <Grid x:Name="BussesGrid" HorizontalAlignment="Left" Height="296" VerticalAlignment="Top" Width="442" Margin="38,36,0,0" Grid.RowSpan="2" Visibility="Collapsed">
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="0,201,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="1,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,61,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,154,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,108,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="315,202,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="30" Margin="315,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Rectangle Fill="#FF0808F5" HorizontalAlignment="Left" Height="29" Margin="1,16,0,0" Stroke="Black" VerticalAlignment="Top" Width="129" RenderTransformOrigin="-0.837,0.69"/>
+            <Label x:Name="label5_Copy7" Content="Cancel" HorizontalAlignment="Left" Margin="323,250,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy" Content="10 Southscentre" HorizontalAlignment="Left" Margin="1,250,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy1" Content="10 Home Road" HorizontalAlignment="Left" Margin="1,201,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy2" Content="37 Northwest Loop" HorizontalAlignment="Left" Margin="0,154,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy3" Content="43 Northwest Loop" HorizontalAlignment="Left" Margin="1,105,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy4" Content="137 North West Loop" HorizontalAlignment="Left" Margin="1,64,0,0" VerticalAlignment="Top" Width="129" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy5" Content="143 Northwest Loop" HorizontalAlignment="Left" Margin="1,16,0,0" VerticalAlignment="Top" Width="128" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy6" Content="More..." HorizontalAlignment="Left" Margin="315,202,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy8" Content="408 Valley Ridge" HorizontalAlignment="Left" Margin="315,154,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy9" Content="77 Edgedale" HorizontalAlignment="Left" Margin="315,108,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy10" Content="54 Hamptons" HorizontalAlignment="Left" Margin="315,64,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy11" Content="154 Edgemont" HorizontalAlignment="Left" Margin="315,16,0,0" VerticalAlignment="Top" Width="111" Foreground="#FFF1EEEE"/>
+            <Label x:Name="label5_Copy12" Content="Buses Near You" HorizontalAlignment="Left" Margin="134,108,0,0" VerticalAlignment="Top" Width="205" FontSize="24"/>
+        </Grid>
+        <Grid x:Name="BusRoutGrid" HorizontalAlignment="Left" Height="296" Margin="37,36,0,0" VerticalAlignment="Top" Width="444" Grid.RowSpan="2" Visibility="Collapsed">
+            <Image x:Name="Bus143_Map_png" Source="256px-Calgary_Transit_route_143_(12-2010).png" Stretch="Fill"/>
+            <Label x:Name="cancelbusmap" Content="Cancel" HorizontalAlignment="Left" Margin="396,254,0,0" VerticalAlignment="Top" Width="48" Foreground="#FFF1EEEE" Background="#FF002AE8"/>
+            <Label x:Name="label6_Copy12" Content="Next Bus: 2mins" HorizontalAlignment="Left" Margin="182,22,0,0" VerticalAlignment="Top" Width="205" FontSize="24"/>
+        </Grid>
+
+
+
+
 
     </Grid>
 </Window>

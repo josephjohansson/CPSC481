@@ -12,3 +12,16 @@ C:\Users\David\Desktop\cpsc481\CTIS Horizontal Prototype\CTIS Horizontal Prototy
 C:\Users\David\Desktop\cpsc481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype.csproj.GenerateResource.Cache
 C:\Users\David\Desktop\cpsc481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype.exe
 C:\Users\David\Desktop\cpsc481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype.pdb
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\bin\Debug\CTIS Horizontal Prototype.exe.config
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype.exe
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype.pdb
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\bin\Debug\CTIS Horizontal Prototype.exe
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\bin\Debug\CTIS Horizontal Prototype.pdb
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype.csprojResolveAssemblyReference.cache
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\MainWindow.baml
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\MainWindow.g.cs
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\App.g.cs
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype_MarkupCompile.cache
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype.g.resources
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS_Horizontal_Prototype.Properties.Resources.resources
+C:\Users\Jose\Source\Repos\CPSC481\CTIS Horizontal Prototype\CTIS Horizontal Prototype\obj\Debug\CTIS Horizontal Prototype.csproj.GenerateResource.Cache
